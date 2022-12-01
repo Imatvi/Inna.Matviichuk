@@ -58,15 +58,12 @@ alert("Dear " + name3 + ", your email is " + email + ", your password is " + pas
 
 // task8
 
-let secondsInHour;
-let secondsInDate;
-let secondsInMounth;
-let daysInMounth;
-
-secondsInHour = 60 * 60;
-secondsInDate = secondsInHour * 24;
-secondsInMounth = daysInMounth * secondsInDate;
-
-console.log(secondsInHour, secondsInDate, secondsInMounth);
+const secondsInHour = 60 * 60;
+const secondsInDateNight = secondsInHour * 24;
+let daysInMonth = prompt("How many days are in the current month?")
+let secondsInMonth;
+secondsInMonth = daysInMonth * secondsInDateNight;
+console.log(secondsInHour, secondsInDateNight, secondsInMonth);
+alert("An hour has " + secondsInHour + " seconds. " + "Date and night has " + secondsInDateNight + " seconds. " + "Current month has " + secondsInMonth + " seconds.");
 
 
