@@ -1,5 +1,7 @@
 // task2
 alert('Matviichuk');
+let lastName ("Matviichuk");
+console.log(lastName);
 
 // task3
 let lightSource1 = 'candel';
@@ -9,11 +11,13 @@ lightSource1 = lightSource2;
 console.log(lightSource1, lightSource2);
 
 // task4
-const person = {
+let senseOfHumor;
+
+let person = {
 name1: 'Hulk', //string
 age: 43, //number
 isStrong: true, //boolean
-senseOfHumor: "", //undefined
+senseOfHumor, //undefined
 stressResistance: "" //null
 };
 console.log(typeof name1);
