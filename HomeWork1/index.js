@@ -18,7 +18,7 @@ name1: 'Hulk', //string
 age: 43, //number
 isStrong: true, //boolean
 senseOfHumor, //undefined
-stressResistance: "" //null
+stressResistance: null //null
 };
 console.log(typeof name1);
 console.log(typeof age);
