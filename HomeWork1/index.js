@@ -1,7 +1,7 @@
 // task2
 alert('Matviichuk');
-let lastName ("Matviichuk");
-console.log(lastName);
+let lastName1 ("Matviichuk");
+console.log(lastName1);
 
 // task3
 let lightSource1 = 'candel';
