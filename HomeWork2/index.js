@@ -90,14 +90,33 @@ console.log(cities[0] + "*" + cities[1] + "*" + cities[2]);
 
 let isAdult1 = prompt ("Скільки вам років?");
 
-if (isAdult1 > 18 ) {
+if (isAdult1 >= 18 ) {
     console.log("Ви досягли повнолітнього віку.");
+    alert("You are an adult.");
 } else if (isAdult1 < 18 ) {
     console.log("Ви ще надто молоді.");
+    alert("You are too young.");
 };
 
-// if (isAdult1 > 18 ) {
-//     alert("Ви досягли повнолітнього віку.");
-// } else if (isAdult1 < 18 ) {
-//     alert("Ви ще надто молоді.");
-// };
+//task6: Користувач вводить три довжини сторін трикутника (використовуйте prompt () три рази для введення кожної сторони).
+
+//a) визначити і вивести в консоль площу трикутника 
+
+alert("Please measure the length of all sides of the triangle");
+let x = prompt("Please enter length of the first sides");
+let y = prompt("Please enter length of the second sides");
+let z = prompt("Please enter length of the third sides");
+
+x = Number(x);
+y = Number(y);
+z = Number(z);
+
+let p = (( x + y + z ) / 2);
+
+let area = Math.sqrt(p * (p - x) * (p - y) * (p - z));
+console.log(area); 
+
+//b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки
+
+
+
