@@ -103,20 +103,52 @@ if (isAdult1 >= 18 ) {
 //a) визначити і вивести в консоль площу трикутника 
 
 alert("Please measure the length of all sides of the triangle");
-let x = prompt("Please enter length of the first sides");
-let y = prompt("Please enter length of the second sides");
-let z = prompt("Please enter length of the third sides");
+let a = prompt("Please enter the length of the longest side. If all of them are equal just enter a length.");
+let b = prompt("Please enter the length of the second sides");
+let c = prompt("Please enter the length of the third sides");
 
-x = Number(x);
-y = Number(y);
-z = Number(z);
+a = Number(a);
+b = Number(b);
+c = Number(c);
 
-let p = (( x + y + z ) / 2);
+let p = (( a + b + c ) / 2);
 
-let area = Math.sqrt(p * (p - x) * (p - y) * (p - z));
+let area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 console.log(area); 
 
 //b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки
 
+if ( a ** 2 == b ** 2 + c ** 2 ) {
+    console.log("Triangle is equilateral");
+} else if ( a ** 2 != b ** 2 + c ** 2 ) {
+    console.log("Triangle is not equilateral");
+}
 
+//task7: Написати умовну конструкцію, яка в залежності від часу доби виводитиме відповідне привітання. Потрібно отримати реальний час доби із системи. Зробити 2 способами через 2 різних умовних оператора.
 
+let currentdate = new Date();
+let datetime =  currentdate.getHours() + ":" 
++ currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
+console.log(new Date);
+console.log(datetime);
+
+let night = datetime >= 23 && datetime <= 5;
+let morning = datetime >= 5 && datetime <= 11;
+let afternoon = datetime >= 11 && datetime <= 17;
+let evening = datetime >= 17 && datetime <= 23;
+
+switch (datetime) {
+    case night:
+        console.log("Доброї ночі!"); //В діапазоні годин 23-5 – має виводитися привітання “Доброї ночі”
+        break;
+    case morning:
+        console.log("Доброго ранку!");//В діапазоні годин 5-11 – має виводитися привітання “Доброго ранку”
+        break;
+    case afternoon:
+        console.log("Доброго дня!");//В діапазоні годин 11-17 – має виводитися привітання “Доброго дня”
+        break;
+    default:
+        console.log("Доброго вечора!");//В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”   
+
+}

@@ -26,16 +26,26 @@
 // }
 
 
-alert("Please measure the length of all sides of the triangle");
-let x = prompt("Please enter length of the first sides");
-let y = prompt("Please enter length of the second sides");
-let z = prompt("Please enter length of the third sides");
+// alert("Please measure the length of all sides of the triangle");
+// let x = prompt("Please enter length of the first sides");
+// let y = prompt("Please enter length of the second sides");
+// let z = prompt("Please enter length of the third sides");
 
-x = Number(x);
-y = Number(y);
-z = Number(z);
+// x = Number(x);
+// y = Number(y);
+// z = Number(z);
 
-let p = (( x + y + z ) / 2);
+// let p = (( x + y + z ) / 2);
 
-let area = Math.sqrt(p * (p - x) * (p - y) * (p - z));
-console.log(area);
+// let area = Math.sqrt(p * (p - x) * (p - y) * (p - z));
+// console.log(area);
+
+
+let currentdate = new Date();
+let datetime = "Last Sync: " + currentdate.getDay() + "/" + currentdate.getMonth() 
++ "/" + currentdate.getFullYear() + " @ " 
++ currentdate.getHours() + ":" 
++ currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
+console.log(new Date);
+console.log(datetime);
