@@ -1,4 +1,7 @@
 //task1: Допишіть код, щоб в консолі браузера з'явилися рядки, які написані в коментарях, оперуючи при цьому змінними х і у.
+
+console.log("Task#1");
+
 let x = 1;
 let y = 2;
 
@@ -25,6 +28,8 @@ console.log(typeof res4); // "number"
 // 	a) парним додатним;
 // 	b) кратним числу 7.
 // Результат перевірки вивести в консоль
+
+console.log("Task#2");
 
 let number = prompt("Please enter any number");
 let result1 = number > 0; 
@@ -54,6 +59,8 @@ if (result3 = (number % 7 == 0)) {
 };
 
 //task3: Створіть порожній масив
+console.log("Task#3");
+
 let array1 = [];
 
 array1[0] = 5; //У перший елемент масиву запишіть будь-яке число
@@ -81,12 +88,14 @@ console.log(array1);
 
 
 //task4: Напишіть програму, яка об’єднує всі наявні елементи масиву в стрічку і розділяє їх символом “*”.
+console.log("Task#4");
 
 const cities = ["Rome", "Lviv", "Warsaw"];
 
 console.log(cities[0] + "*" + cities[1] + "*" + cities[2]);
 
 //task5: Використовуючи функцію prompt() задайте користувачу питання про досягнення ним повнолітнього віку. Результат запишіть в змінну isAdult. В залежності від отриманого значення виведіть відповідне повідомлення про статус особи. Наприклад: при виконанні умови вік більше 18 вивести “Ви досягли повнолітнього віку”. Якщо вік менше 18 років вивести “Ви ще надто молоді”, 
+console.log("Task#5");
 
 let isAdult1 = prompt ("Скільки вам років?");
 
@@ -101,11 +110,27 @@ if (isAdult1 >= 18 ) {
 //task6: Користувач вводить три довжини сторін трикутника (використовуйте prompt () три рази для введення кожної сторони).
 
 //a) визначити і вивести в консоль площу трикутника 
+console.log("Task#6");
 
 alert("Please measure the length of all sides of the triangle");
-let a = prompt("Please enter the length of the longest side. If all of them are equal just enter a length.");
-let b = prompt("Please enter the length of the second sides");
-let c = prompt("Please enter the length of the third sides");
+let a = parseFloat(prompt("Please enter the length of the longest side. If all of them are equal just enter a length."));
+let b = parseFloat(prompt("Please enter the length of the second sides"));
+let c = parseFloat(prompt("Please enter the length of the third sides"));
+
+switch (Number) {
+    case a:
+        console.log("Correct data.");
+        break;
+    case b:
+        console.log("Correct data.");
+        break;
+    case c:
+        console.log("Correct data.");
+        break;
+    default:
+        console.log("Incorrect data.");
+        alert("You have entered incorrect data.");
+}
 
 a = Number(a);
 b = Number(b);
@@ -119,26 +144,38 @@ console.log(area);
 //b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки
 
 if ( a ** 2 == b ** 2 + c ** 2 ) {
-    console.log("Triangle is equilateral");
+    console.log("Triangle is rectangular");
 } else if ( a ** 2 != b ** 2 + c ** 2 ) {
-    console.log("Triangle is not equilateral");
+    console.log("Triangle is not rectangular");
 }
 
 //task7: Написати умовну конструкцію, яка в залежності від часу доби виводитиме відповідне привітання. Потрібно отримати реальний час доби із системи. Зробити 2 способами через 2 різних умовних оператора.
+console.log("Task#7");
 
 let currentdate = new Date();
 let datetime =  currentdate.getHours() + ":" 
 + currentdate.getMinutes() + ":" + currentdate.getSeconds();
 
-console.log(new Date);
+// console.log(new Date);
 console.log(datetime);
+console.log(typeof datetime);
+// datetime = Number(datetime);
+// console.log(datetime);
 
-let night = datetime >= 23 && datetime <= 5;
-let morning = datetime >= 5 && datetime <= 11;
-let afternoon = datetime >= 11 && datetime <= 17;
-let evening = datetime >= 17 && datetime <= 23;
+let night = datetime >= "23, 0, 0" && datetime <= "4, 59, 59";
+console.log(night);
 
-switch (datetime) {
+let morning = datetime >= "5:0:0" && datetime <= "10:5959";
+console.log(morning);
+
+let afternoon = datetime >= "11:0:0" && datetime <= "16:59:59";
+console.log(afternoon);
+
+let evening = datetime >= "17:0:0" && datetime <= "22:59:59";
+console.log(evening);
+
+
+switch (true) {
     case night:
         console.log("Доброї ночі!"); //В діапазоні годин 23-5 – має виводитися привітання “Доброї ночі”
         break;
@@ -148,7 +185,7 @@ switch (datetime) {
     case afternoon:
         console.log("Доброго дня!");//В діапазоні годин 11-17 – має виводитися привітання “Доброго дня”
         break;
-    default:
-        console.log("Доброго вечора!");//В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”   
-
+    case evening:
+        console.log("Доброго вечора!");//В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”.
+        break;
 }
