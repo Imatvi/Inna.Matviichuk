@@ -117,28 +117,24 @@ let a = parseFloat(prompt("Please enter the length of the longest side. If all o
 let b = parseFloat(prompt("Please enter the length of the second sides"));
 let c = parseFloat(prompt("Please enter the length of the third sides"));
 
-switch (Number) {
-    case a:
-        console.log("Correct data.");
-        break;
-    case b:
-        console.log("Correct data.");
-        break;
-    case c:
-        console.log("Correct data.");
-        break;
-    default:
-        console.log("Incorrect data.");
-        alert("You have entered incorrect data.");
-}
+function containsNumbers(str) {
+    return /^\d+$/.test(str);
+  }
 
-a = Number(a);
-b = Number(b);
-c = Number(c);
+if(containsNumbers(a, b, c)) { 
+    console.log("Correct data."); 
+} else { 
+    console.log("Incorrect data.");
+    alert("You have entered incorrect data."); }
+
+console.log(typeof a, typeof b, typeof c);
 
 let p = (( a + b + c ) / 2);
 
 let area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+//console.log(typeof area);
+area.toFixed(3);
+//console.log(typeof area);
 console.log(area); 
 
 //b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки

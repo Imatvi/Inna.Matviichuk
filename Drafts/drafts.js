@@ -169,27 +169,45 @@
 
 
 
-    alert("Please measure the length of all sides of the triangle");
-let a = parseFloat(prompt("Please enter the length of the longest side. If all of them are equal just enter a length."));
-let b = parseFloat(prompt("Please enter the length of the second sides"));
-let c = parseFloat(prompt("Please enter the length of the third sides"));
+// alert("Please measure the length of all sides of the triangle");
+// let a = parseFloat(prompt("Please enter the length of the longest side. If all of them are equal just enter a length."));
+// let b = parseFloat(prompt("Please enter the length of the second sides"));
+// let c = parseFloat(prompt("Please enter the length of the third sides"));
 
-console.log(typeof a, typeof b, typeof c);
+// function containsNumbers(str) {
+//     return /^\d+$/.test(str);
+//   }
 
-switch (Number) {
-    case a:
-        console.log("Correct data.");
-        break;
-    case b:
-        console.log("Correct data.");
-        break;
-    case c:
-        console.log("Correct data.");
-        break;
-    default:
-        console.log("Incorrect data.");
-        alert("You have entered incorrect data.");
-}
+// if(containsNumbers(a, b, c)) { 
+//     console.log("Correct data."); 
+// } else { 
+//     console.log("Incorrect data.");
+//     alert("You have entered incorrect data."); }
+
+// console.log(typeof a, typeof b, typeof c);
+
+// let p = (( a + b + c ) / 2);
+
+// let area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+// console.log(typeof area);
+// area.toFixed(3);
+// console.log(typeof area);
+// console.log(area); 
+
+// switch (Number) {
+//     case a:
+//         console.log("Correct data.");
+//         break;
+//     case b:
+//         console.log("Correct data.");
+//         break;
+//     case c:
+//         console.log("Correct data.");
+//         break;
+//     default:
+//         console.log("Incorrect data.");
+//         alert("You have entered incorrect data.");
+// }
 
 // a = Number(a);
 // b = Number(b);
@@ -199,3 +217,28 @@ switch (Number) {
 
 // let area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 // console.log(area); 
+
+alert("Please measure the length of all sides of the triangle");
+let a = parseFloat(prompt("Please enter the length of the longest side. If all of them are equal just enter a length."));
+let b = parseFloat(prompt("Please enter the length of the second sides"));
+let c = parseFloat(prompt("Please enter the length of the third sides"));
+
+function containsNumbers(str) {
+    return /^\d+$/.test(str);
+  }
+
+if(containsNumbers(a, b, c)) { 
+    console.log("Correct data."); 
+} else { 
+    console.log("Incorrect data.");
+    alert("You have entered incorrect data."); }
+
+console.log(typeof a, typeof b, typeof c);
+
+let p = (( a + b + c ) / 2);
+
+let area = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+//console.log(typeof area);
+area.toFixed(3);
+//console.log(typeof area);
+console.log(area); 
