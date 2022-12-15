@@ -185,3 +185,14 @@ switch (true) {
         console.log("Доброго вечора!");//В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”.
         break;
 }
+
+if (night = true) {
+    console.log("Доброї ночі!");
+} else if (morning = true) {
+    console.log("Доброго ранку!");
+} else if (afternoon = true) {
+    console.log("Доброго дня!");
+} else if (evening = true) {
+    console.log("Доброго вечора!");
+}
+
