@@ -188,11 +188,14 @@ switch (true) {
 
 if (night = true) {
     console.log("Доброї ночі!");
-} else if (morning = true) {
+}
+ if (morning = true) {
     console.log("Доброго ранку!");
-} else if (afternoon = true) {
+} 
+if (afternoon = true) {
     console.log("Доброго дня!");
-} else if (evening = true) {
+} 
+if (evening = true) {
     console.log("Доброго вечора!");
 }
 
