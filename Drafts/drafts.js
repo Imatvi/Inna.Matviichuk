@@ -250,3 +250,12 @@ for (let i = 0; i === p; i++) {
     console.log(i);
     if i
 }
+
+for (let i = 0; i <= 15; i++) {
+    if (i % 2 === 0) {
+      alert([i] + " is odd");
+    }
+    else {
+      alert([i] + " is even");
+    }
+};
