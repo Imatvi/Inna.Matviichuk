@@ -59,11 +59,43 @@ console.log(i1);
 
 // }
 
-//task3
+//task3: Напишіть функцію randArray(k), яка заповнюватиме масив k випадковими цілими числами. Випадкові числа генеруються із діапазону 1-500.
 console.log("Task#3");
+function randArray(k) {
+  let array = [];
 
-//task4
+
+
+}
+let array1 = [];
+
+//task4: Напишіть функцію raiseToDegree(a,b), яка повертає результат піднесення числа a до степеня b. 
+//Функція працює тільки з цілими числами. Реалізувати інтерфейс введення чисел a, b з клавіатури.
 console.log("Task#4");
+
+function raiseToDegree(a,b) {
+  let result = a ** b;
+  if (Number.isInteger(a, b)) {
+    console.log(result);
+  } else {
+    console.log("You have entered incorrect data.");
+  }
+}
+
+let a = prompt("Please enter  first number")
+let b = prompt("Please enter  second number")
+
+raiseToDegree(a, b);
+
+function containsNumbers(str) {
+  return /^\d+$/.test(str);
+}
+
+if(containsNumbers(a, b, c)) { 
+  console.log("Correct data."); 
+} else { 
+  console.log("Incorrect data.");
+  alert("You have entered incorrect data."); }
 
 //task5
 console.log("Task#5");
