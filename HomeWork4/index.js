@@ -18,9 +18,23 @@ calcRectangleArea(10, 8);
 //Task#2: Напишіть функцію checkAge(), яка пропонуватиме юзеру ввести свій вік і генерувати в модальному вікні помилки у випадку
 console.log("Task#2");
 
+function checkAge() {
+    let age = +prompt("How old are you?");
+    return age;
+}
+
+console.log(checkAge());
+
 //Task#3: Створіть клас MonthException, конструктор якого приймає параметр message і ініціалізує поле name значенням 'MonthException'.
 console.log("Task#3");
+
+//class MonthException;
 
 //Task#4: Реалізуйте функцію showUser(id), яка приймає параметром користувацьке id і повертає об’єкт, який містить значення переданої id. 
 //Також функція викидає помилку у разі якщо введено від’ємне id.
 console.log("Task#4");
+
+function showUser(id) {
+    let array = [];
+    
+}
