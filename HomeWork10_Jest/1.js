@@ -1,0 +1,1 @@
+getPromise(message, delay)
