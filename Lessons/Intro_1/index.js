@@ -8,7 +8,7 @@ let house = {
     street: "Green",
     number: 8
 }
-
+HomeWork6
 console.log(house);
 
 
