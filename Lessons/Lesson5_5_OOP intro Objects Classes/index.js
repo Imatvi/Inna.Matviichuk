@@ -95,23 +95,53 @@
 
 // Yuriy.showAge();
 
-class User {
-    constructor(name) {
-        this._name = name;
+// class User {
+//     constructor(name) {
+//         this._name = name;
+//     }
+//     get name() {
+//         return this._name;
+//     }
+//     set name(value) {
+//         if (value.length < 4) {
+//             alert("Name is too chort")
+//             return;
+//         }
+//         this._name = value;
+//     }
+// }
+
+// let user = new User("John");
+// alert(user.name);
+// let user2 = new User("David");
+// user2.name = "Bob";
+
+class Animal {
+    constructor(kind, weight) {
+        this.kind = kind;
+        this.weight = weight;
     }
-    get name() {
-        return this._name;
-    }
-    set name(value) {
-        if (value.length < 4) {
-            alert("Name is too chort")
-            return;
-        }
-        this._name = value;
+    run() {
+        alert(this.kind + " runs!");
     }
 }
 
-let user = new User("John");
-alert(user.name);
-let user2 = new User("David");
-user2.name = "Bob";
+class Leopard extends Animal {
+    constructor(kind, weight, speed) {
+        super(kind, weight);
+        this.speed = speed;
+    }
+    run() {
+        alert(this.kind + " runs!");
+        alert(this.kind + "getting ready to jump");
+    }
+    jump() {
+        alert(this.kind + " jumps!");
+    }
+}
+
+let leopard = new Leopard("Spotted leopard", 10, 5);
+leopard.run();
+
+alert(leopard.weight);
+alert(leopard.speed);
