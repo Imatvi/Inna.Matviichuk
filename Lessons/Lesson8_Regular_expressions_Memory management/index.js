@@ -43,3 +43,29 @@ console.log( "Paragraph 223".match(/\d\.\d/) );  // null
 let re = /html|css|java(script)?/gi;
 let str = "Java first appeared, then HTML, then JavaScript";
 console.log( str.match(re) ); // ["Java", "HTML", "JavaScript"]
+
+let users = ["1", "2", "3", "4", "5"];
+
+users.forEach(function(element, index, array){
+    console.log(element);
+    console.log(index);
+    console.log(array);
+}
+)
+
+users.map(function(element, index, array){
+    console.log(element);
+})
+
+let newUsers = users.map(function(element, index, array){
+    return element + "2";
+})
+
+console.log(newUsers);
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let result1 = numbers.reduce(function(sum, element){
+    return sum + element;
+}, 0)
+
+console.log(result1);
