@@ -1,18 +1,18 @@
 //Task#1: Напишіть функцію, яка перевірятиме чи перший символ в рядку написаний в верхньому регістрі, чи ні. 
 console.log("Task#1")
-function defineLetter(str) {
-    let RegExp = /[A-Z]/;
-    if RegExp = true {
-        console.log("String includes upper letters");
-    } else {
-        console.log("String does not includes upper letters");
-    }
-}
+// function defineLetter(str) {
+//     let RegExp = /[A-Z]/;
+//     if RegExp = true {
+//         console.log("String includes upper letters");
+//     } else {
+//         console.log("String does not includes upper letters");
+//     }
+// }
 
-let str1 = "uppercase";
-let str2 = "UpperCase";
-console.log(regExp.test(str1));
-console.log(regExp.test(str2)); 
+// let str1 = "uppercase";
+// let str2 = "UpperCase";
+// console.log(regExp.test(str1));
+// console.log(regExp.test(str2)); 
 
 function upperCase(str) {
     let regexp = /^[A-Z]/;
