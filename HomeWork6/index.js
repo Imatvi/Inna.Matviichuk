@@ -62,7 +62,7 @@ console.log("Task#4");
 
 let res1 = /(w+)\s(\w+)/;
 let string = "Java Script";
-let newString = string.replace(res1, "$2, $1";
+let newString = string.replace(res1, "$2, $1");
 console.log(newString);
 
 //Task#5: Напишіть функцію, яка виконуватиме валідацію номера банківської карти (9999-9999-9999-9999).
@@ -108,7 +108,7 @@ console.log("Task#7");
 
 function checkLogin(data) {
     let regexp3 = /^[a-zA-Z]{1}[a-zA-Z0-9]\.{1, 9}$/;
-    let numberOfSymbols = /[0-9.\]+/g;
+    let numberOfSymbols = /\[0-9.\]+/g;
     let res3 = data.match(numberOfSymbols);
     let res4 = regexp3.test(data);
     console.log(`${data} is ${res4} - ${res3}`)

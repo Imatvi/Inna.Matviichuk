@@ -15,7 +15,7 @@ let data = {
     names: ["Sam", "Tom", "Ray", "Bob"],
     ages: [20, 24, 22, 26],
  };
- let {[person1, person2, person3, person4], [age1, age2, age3, age4]} = data;
+ let {names: [person1, person2, person3, person4], ages: [age1, age2, age3, age4]} = data;
  console.log(person2); // "Tom"
  console.log(age2); // 24
  console.log(person4); // "Bob"
@@ -24,9 +24,18 @@ let data = {
 //Task#3: Напишіть функцію mul(), яка приймає будь-яку кількість параметрів різного типу і повертає добуток параметрів типу Number.
 console.log("Task#3");
 
-function mul() {
-
+function mul(...rest) {
+   let result = 1;
+   let isNumber = false;
+   for (let i of rest) {
+      if (typeof i == "number") {
+         result *= i;
+         isNumber = true;
+      }
+   }
+   return isNumber ? result : 0;
  }
+
  console.log(mul(1, "str", 2, 3, true)); // 6
  console.log(mul(null, "str", false, true)); // 0
  
@@ -38,9 +47,9 @@ console.log("Task#4");
 let server = {
     data: 0,
     convertToString: function (callback) {
-       callback((function () {
+       callback(() => {
           return this.data + "";
-       }).bind(this));
+       });
     }
  };
  let client = {
@@ -51,9 +60,9 @@ let server = {
        this.server.convertToString(this.notification());
     },
     notification: function () {
-       return (function (callback) {
+       return (callback => {
           this.result = callback();
-       }).bind(this);
+       });
     }
  };
  client.calc(123);
@@ -70,6 +79,14 @@ console.log("Task#5");
 
 let keys = [1, 2, 3, 4];
 let values = ["div", "span", "b", "i"];
-let map = mapBuilder(keys, values);
+function mapBuilder(keys, values) {
+   const map = new Map();
+   for (let i of keys) {
+      map.set(i, values[i - 1]);
+   }
+   return map;
+}
+
+
 console.log(map.size); // 4
 	console.log(map.get(2)); // "span"
