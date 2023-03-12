@@ -1,0 +1,14 @@
+const product = require('./product');
+
+// describe("Multiply tests", () => {
+//     test('multiply 2 by 3 is 6', () => {
+//         expect(product(2, 3)).toBe(6);
+//     });
+// });
+
+describe("Product function", () => {
+    test('multiply 2 by 3 is 6', () => {
+        expect(product(2, 3)).toBe(6);
+        expect(product(2, 3)).not.toBe(10);
+    });
+});
