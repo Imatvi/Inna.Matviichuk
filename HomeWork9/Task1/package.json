@@ -1,0 +1,14 @@
+{
+  "name": "inna.matviichuk",
+  "version": "1.0.0",
+  "description": "info",
+  "main": "server_500.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
