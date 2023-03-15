@@ -2,7 +2,7 @@
   "name": "inna.matviichuk",
   "version": "1.0.0",
   "description": "info",
-  "main": "server_5000.js",
+  "main": "server.js",
   "scripts": {
     "test": ""
   },
